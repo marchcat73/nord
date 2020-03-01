@@ -5,6 +5,7 @@ const cookieParser = require('cookie-parser');
 const cors = require('cors');
 const mongoose = require('mongoose');
 require('dotenv').config();
+const paymentRoutes = require('./routes/payment');
 
 /** app */
 const app = express();
@@ -28,6 +29,9 @@ app.use(cookieParser());
 if (process.env.NODE_ENV === 'development') {
   app.use(cors({ origin: `${process.env.CLIENT_URL}` }));
 }
+
+/** routes middleware */
+app.use('/api/v1', paymentRoutes);
 
 /** routes */
 app.get('/api', (req, res) => {
