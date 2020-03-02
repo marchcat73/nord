@@ -6,6 +6,7 @@ const cors = require('cors');
 const mongoose = require('mongoose');
 require('dotenv').config();
 const paymentRoutes = require('./routes/payment');
+const authRoutes = require('./routes/auth');
 
 /** app */
 const app = express();
@@ -30,8 +31,9 @@ if (process.env.NODE_ENV === 'development') {
   app.use(cors({ origin: `${process.env.CLIENT_URL}` }));
 }
 
-/** routes middleware */
+/** routes middlewares */
 app.use('/api/v1', paymentRoutes);
+app.use('/api/v1', authRoutes);
 
 /** routes */
 app.get('/api', (req, res) => {
