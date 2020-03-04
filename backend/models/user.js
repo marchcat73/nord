@@ -25,11 +25,15 @@ const userSchema = new Schema(
       unique: true,
       lowercase: true
     },
+    profile: {
+      type: String,
+      required: true
+    },
     hashed_password: {
       type: String,
       required: true
     },
-    salt: Number,
+    salt: String,
     role: {
       type: Number,
       trim: true
