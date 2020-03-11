@@ -13,6 +13,11 @@
     "react-dom": "16.13.0"
   },
   "devDependencies": {
+    "postcss-css-variables": "^0.14.0",
+    "postcss-easings": "^2.0.0",
+    "postcss-import": "^12.0.1",
+    "postcss-nested": "^4.2.1",
+    "postcss-simple-vars": "^5.0.2",
     "prettier": "^1.19.1"
   }
 }
