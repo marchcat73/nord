@@ -1,0 +1,11 @@
+.main {
+  &__title {
+    color: red;
+  }
+}
+
+.text {
+  .custom & {
+    background-color: aqua;
+  }
+}
