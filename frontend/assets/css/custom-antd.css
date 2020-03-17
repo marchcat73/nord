@@ -1,24 +1,4 @@
-/* test */
-.main {
-  &__title {
-    color: red;
-  }
-}
-
-.text {
-  .custom & {
-    background-color: aqua;
-  }
-}
-
-/* styles */
-
-.layout {
-  display: flex;
-  flex-flow: column nowrap;
-}
-
-/* .ant-menu {
+.ant-menu {
   background-color: indigo;
   color: aqua;
 }
@@ -37,4 +17,4 @@
 }
 .ant-menu {
   background-color: indigo;
-} */
+}
