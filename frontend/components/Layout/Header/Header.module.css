@@ -1,0 +1,11 @@
+.header {
+  display: flex;
+  height: 3rem;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    color: #4a49ff;
+  }
+}

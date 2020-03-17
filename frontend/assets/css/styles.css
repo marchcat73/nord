@@ -1,3 +1,4 @@
-@import "./bootstrap-reboot.css";
-@import "./bootstrap-grid.css";
-@import "./main.css";
+@import './bootstrap-reboot.css';
+@import './bootstrap-grid.css';
+@import '../../node_modules/antd/dist/antd.css';
+@import './main.css';
