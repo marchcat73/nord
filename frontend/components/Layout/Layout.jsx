@@ -2,7 +2,7 @@ import { Header } from './Header';
 
 const Layout = ({ children }) => {
   return (
-    <div className="container-fluid">
+    <div className="layout">
       <Header />
       {children}
       <p>footer</p>

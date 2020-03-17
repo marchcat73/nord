@@ -6,6 +6,8 @@ import {
   UserAddOutlined
 } from '@ant-design/icons';
 
+import { APP_NAME } from '../../../config';
+
 import styles from './Header.module.css';
 
 const Header = () => {
@@ -19,7 +21,7 @@ const Header = () => {
 
   return (
     <div className={styles.header}>
-      <div className={styles.header__logo}>logo</div>
+      <div className={styles.header__logo}>{APP_NAME}</div>
       <Menu onClick={handleClick} selectedKeys={[current]} mode="horizontal">
         <Menu.Item key="login">
           <UserOutlined />

@@ -4,8 +4,11 @@
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
+  padding: 0 1rem;
+  background-color: indigo;
 
   &__logo {
-    color: #4a49ff;
+    color: #fff;
+    font-size: 1.5rem;
   }
 }
