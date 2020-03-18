@@ -1,11 +1,24 @@
 .header {
   display: flex;
-  height: 3rem;
+  height: 50px;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
+  padding: 0 1rem;
+  background-color: indigo;
 
   &__logo {
-    color: #4a49ff;
+    color: #fff;
+    font-size: 1.5rem;
+  }
+
+  .menu {
+    background-color: indigo;
+    color: aqua;
+    border-bottom: none;
+  }
+
+  .menuItem {
+    color: #fff;
   }
 }

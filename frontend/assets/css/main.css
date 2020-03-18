@@ -1,6 +1,9 @@
+/* test */
 .main {
   &__title {
-    color: red;
+    color: #000;
+    text-align: center;
+    margin: 1rem 0;
   }
 }
 
@@ -9,3 +12,5 @@
     background-color: aqua;
   }
 }
+
+/* styles */

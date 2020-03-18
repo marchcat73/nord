@@ -1,0 +1,24 @@
+.ant-menu {
+  background-color: indigo;
+  color: aqua;
+}
+
+.ant-menu-horizontal > .ant-menu-item > a {
+  color: aqua;
+}
+
+.ant-menu-horizontal {
+  border-bottom: none;
+}
+
+.ant-menu-horizontal > .ant-menu-item-selected {
+  color: #fff;
+  border-bottom: 2px solid yellow;
+}
+
+.ant-menu-horizontal > .ant-menu-item:hover {
+  color: aquamarine;
+}
+.ant-menu {
+  background-color: indigo;
+}

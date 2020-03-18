@@ -1,10 +1,13 @@
 import { useState } from 'react';
+import Link from 'next/link';
 import { Menu } from 'antd';
 import {
   UserOutlined,
   UserDeleteOutlined,
   UserAddOutlined
 } from '@ant-design/icons';
+
+import { APP_NAME } from '../../../config';
 
 import styles from './Header.module.css';
 
@@ -19,17 +22,25 @@ const Header = () => {
 
   return (
     <div className={styles.header}>
-      <div className={styles.header__logo}>logo</div>
+      <div>
+        <Link href="/">
+          <a className={styles.header__logo}>{APP_NAME}</a>
+        </Link>
+      </div>
       <Menu onClick={handleClick} selectedKeys={[current]} mode="horizontal">
-        <Menu.Item key="login">
+        <Menu.Item key="signin">
           <UserOutlined />
-          Вход
+          <Link href="/signin">
+            <a>Вход</a>
+          </Link>
         </Menu.Item>
-        <Menu.Item key="registration">
+        <Menu.Item key="signup">
           <UserAddOutlined />
-          Регистрация
+          <Link href="/signup">
+            <a>Регистрация</a>
+          </Link>
         </Menu.Item>
-        <Menu.Item key="logout">
+        <Menu.Item key="signout">
           <UserDeleteOutlined />
           Выход
         </Menu.Item>
