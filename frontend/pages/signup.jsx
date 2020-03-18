@@ -1,13 +1,10 @@
-import Link from 'next/link';
-import { Layout } from '../components';
+import { Layout, SignupComponent } from '../components';
 
 const Signup = () => {
   return (
     <Layout>
-      <h2 className="main__title">Signup page</h2>
-      <Link href="/">
-        <a>Home</a>
-      </Link>
+      <h2 className="main__title">Регистрация пользователя</h2>
+      <SignupComponent />
     </Layout>
   );
 };
