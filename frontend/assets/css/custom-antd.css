@@ -3,6 +3,10 @@
   color: aqua;
 }
 
+.ant-menu-horizontal > .ant-menu-item > a {
+  color: aqua;
+}
+
 .ant-menu-horizontal {
   border-bottom: none;
 }
